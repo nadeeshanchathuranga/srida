@@ -165,7 +165,7 @@ const handlePrintReceipt = () => {
         }
         return item;
     };
-    
+
     const getItemBasePrice = (item) => {
         const target = getSelectedBatch(item);
         if (props.saleType === 'wholesale') {
@@ -376,7 +376,7 @@ const productRows = props.products
   <body>
       <div class="receipt-container">
                 <div class="header">
-   <img src="/images/billlogo.png" style="width: 230px; height: 100px;" />
+   <img src="/images/billlogo.png" style="width:200px; height: 70px;" />
 
            ${companyInfo?.value?.name ? `<h1>${companyInfo.value.name}</h1>` : ''}
   ${companyInfo?.value?.address ? `<p>${companyInfo.value.address}</p>` : ''}

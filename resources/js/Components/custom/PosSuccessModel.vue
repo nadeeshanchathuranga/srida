@@ -381,7 +381,8 @@ const productRows = props.products
            ${companyInfo?.value?.name ? `<h1>${companyInfo.value.name}</h1>` : ''}
   ${companyInfo?.value?.address ? `<p>${companyInfo.value.address}</p>` : ''}
   ${(companyInfo?.value?.phone || companyInfo?.value?.phone2 || companyInfo?.value?.email)
-            ? `<p>${companyInfo.value.phone || ''} ${companyInfo.value.phone2 || ''}  ${companyInfo.value.email || ''}</p>`
+            ? `<p>${companyInfo.value.phone || ''}  ${companyInfo.value.phone2 || ''}</p>`
+                `<p> ${companyInfo.value.email || ''}</p>`
             : ''}
     ${props.isReturnExchange ? `<div class="exchange-badge">RETURN EXCHANGE BILL</div>` : ''}
     ${props.saleType === 'wholesale' ? `<div class="exchange-badge">WHOLESALE BILL</div>` : ''}

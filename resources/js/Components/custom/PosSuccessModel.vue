@@ -526,6 +526,14 @@ const productRows = props.products
               </div>
               `}
           </div>
+
+          <div class="footer">
+
+              <p>Thank you for choosing us. We looking forward to serving you again.</p>
+
+               <p style="font-weight: bold;">Powered by JAAN Network Ltd.</p>
+               <p>${new Date().toLocaleTimeString()} </p>
+          </div>
       </div>
     </div>
     </body>
